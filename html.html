@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tecnologias Para Internet</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="logo" href="/">LOGO</a>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="js.html">JS</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="sections-wrapper">
+        <section class="intro">
+            <h1>HTML</h1>
+            <p>Esta página apresenta conteúdos e exemplos sobre HTML, 
+                a linguagem de marcação usada para estruturar páginas na web.
+                Aqui você encontrará explicações, dicas e boas práticas 
+                para criar documentos HTML bem organizados e acessíveis.</p>
+            <img src="images/html5-emblem.webp" alt="html5-emblem">
+        </section>
+        <section class="section-content">
+            <h2>O que é HTML</h2>
+            <p>HTML (HyperText Markup Language) é a linguagem de marcação usada para estruturar e organizar o conteúdo de páginas na web. 
+                Ele define elementos como títulos, parágrafos, imagens, links e listas, 
+                permitindo que navegadores interpretem e exibam essas informações de forma visual para o usuário.</p>
+        </section>
+        <section class="section-content">
+            <h2>Estrutura básica</h2>
+            <ul>
+                <li><strong>!DOCTYPE html</strong>: informa ao navegador que o documento segue o padrão HTML5.</li>
+                <li><strong>html lang="pt-br"</strong>: elemento raiz, com atributo <code>lang</code> definindo o idioma da página.</li>
+                <li><strong>head</strong>: contém metadados, título da página, configuração de responsividade (<code>viewport</code>) e links para arquivos externos como CSS.</li>
+                <li><strong>body</strong>: onde fica todo o conteúdo visível:
+                    <ul>
+                        <li><strong>header</strong>: área do cabeçalho, normalmente com logo, título ou menu.</li>
+                        <li><strong>main</strong>: parte principal do conteúdo da página.
+                            <ul>
+                                <li><strong>.sections-wrapper</strong>: contêiner que agrupa todas as seções do site. Ele centraliza o conteúdo, define uma largura máxima e aplica um espaçamento uniforme (<code>gap</code>) entre as seções, garantindo consistência visual e facilitando a manutenção do layout.</li>
+                                <li><strong>section</strong>: blocos que separam o conteúdo por tema ou função (ex.: introdução, sobre, contato).</li>
+                            </ul>
+                        </li>
+                        <li><strong>footer</strong>: rodapé da página, geralmente com direitos autorais, links úteis ou informações de contato.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>
+                Essa organização torna o HTML mais semântico, fácil de manter e de aplicar estilos no CSS, especialmente quando usamos o <code>.sections-wrapper</code> para controlar layout e espaçamentos de todas as seções de uma vez só.
+            </p><br>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt; &lt;!-- Linka o style.css com no HTML --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;header&gt;
+        &lt;!-- Cabeçalho / Menu --&gt;
+    &lt;/header&gt;
+
+    &lt;main class="class="sections-wrapper"&gt;
+        &lt;section&gt;
+            &lt;!-- Conteúdo da primeira seção --&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;!-- Conteúdo da segunda seção --&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;!-- Rodapé --&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+        </section>
+        <section class="section-content">
+            <h2>Principais tags</h2>
+
+            <p><strong>header:</strong> Cabeçalho da página ou seção, normalmente com logo, título ou menu.</p>
+
+            <p><strong>nav:</strong> Área de navegação com links para outras páginas ou seções.</p>
+
+            <p><strong>main:</strong> Conteúdo principal da página.</p>
+
+            <p><strong>section:</strong> Bloco de conteúdo sobre um tema específico.</p>
+
+            <p><strong>footer:</strong> Rodapé da página, geralmente com direitos autorais ou links extras.</p>
+
+            <p><strong>h1 a h6:</strong> Títulos, indo do mais importante (h1) ao menos importante (h6).</p>
+
+            <p><strong>p:</strong> Define um parágrafo de texto.</p>
+
+            <p><strong>a:</strong> Cria links para outras páginas ou âncoras internas.  
+            Exemplo: <a href="#">Clique aqui</a></p>
+
+            <p><strong>img:</strong> Insere imagens na página.  
+            Exemplo: <br><br><img src="images/html5-emblem.webp" alt="Imagem de exemplo" width="50"></p>
+
+            <p><strong>ul:</strong> Cria uma lista não ordenada (com marcadores).  
+            Exemplo:  
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            </p>
+
+            <p><strong>ol:</strong> Cria uma lista ordenada (numerada).  
+            Exemplo:  
+            <ol>
+                <li>Primeiro</li>
+                <li>Segundo</li>
+                <li>Terceiro</li>
+            </ol>
+            </p>
+
+            <p><strong>li:</strong> Representa um item dentro de uma lista.  
+            Exemplo:  
+            <ul>
+                <li>Exemplo de item em lista</li>
+            </ul>
+            </p>
+
+            <p><strong>div:</strong> Contêiner genérico para agrupar conteúdo.  
+            Exemplo:  
+            <div style="border: 1px solid #ccc; padding: 8px;">Conteúdo dentro da div</div>
+            </p>
+
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* Configuração básica de cor e fonte */
+body {
+    background-color: #181818;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+p, li {
+  line-height: 1.6;
+}
+
+ul, ul ul, ol, ol ol, li, li li {
+  margin-left: 24px;
+}
+
+a {
+  color: #4da3ff; /* azul claro */
+  text-decoration: none; /* opcional: remove o sublinhado */
+}
+
+a:hover {
+  color: #80c1ff; /* azul ainda mais claro no hover */
+}
+
+/* Reseta margens/paddings padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Classe para poder usar um gap padrão entre as sessões da página */
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;          /* espaço entre seções */
+  width: 68%;         /* ocupa 68% da largura da página */
+  max-width: 900px;   /* mas nunca passa de 900px */
+  margin: 80px auto; /* 40px em cima e embaixo, centralizado */
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;          /* espaço entre seções */
+}
+
+/* ----------- Início formatação menu ----------- */
+
+/* Cabeçalho */
+.site-header {
+  padding: 16px 24px;
+  background-color: #202020;
+}
+
+/* Navegação*/
+.nav {
+  display: flex;
+  justify-content: space-between; /* Logo à esquerda, menu à direita */
+  align-items: center;            /* Centraliza verticalmente */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Menu */
+.menu {
+  list-style: none;  /* Remove os marcadores */
+  display: flex;
+  gap: 24px;         /* Espaço entre os itens */
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.menu a:hover {
+  color: #1e90ff; /* Azul no hover */
+}
+
+/* Logo */
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* ----------- Fim formatação menu ----------- */
+
+/* ----------- Início Sessão de introdução -----------  */
+.intro {
+  text-align: center;  /* Centraliza o texto */
+  display: flex;
+  flex-direction: column; /* Empilha h1 e p */
+  gap: 24px;              /* Espaço entre eles */
+}
+
+.intro h1 {
+  font-size: 48px;
+}
+
+img[alt="html5-emblem"] {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  margin: 16px auto 0 auto;
+}
+
+img[alt="css-emblem"] {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  margin: 16px auto 0 auto;
+}
+
+img[alt="java-script-emblem"] {
+  width: 50%;
+  max-width: 500px;
+  height: auto;
+  margin: 16px auto 0 auto;
+}
+
+
+/* ----------- Fim Sessão de introdução -----------  */
+
+.container {
+  display: flex;              /* Ativa flexbox */
+  align-items: center;        /* Centraliza na vertical */
+  height: 100vh;              /* Tela inteira */
+  flex-direction: column;     /* Mantém h1 e p em coluna */
+}
+
+pre {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto; /* rolagem horizontal se o código for longo */
+}
+
+code {
+  font-family: monospace;
+}
