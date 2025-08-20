@@ -15,7 +15,7 @@ ul, ul ul, ol, ol ol, li, li li {
 
 a {
   color: #4da3ff; /* azul claro */
-  text-decoration: none; /* opcional: remove o sublinhado */
+  text-decoration: none; /* Remove o sublinhado */
 }
 
 a:hover {
