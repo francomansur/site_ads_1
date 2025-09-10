@@ -144,3 +144,9 @@ pre {
 code {
   font-family: monospace;
 }
+
+.escopo {
+  width: 68%;         
+  max-width: 900px;  
+  margin: 40px auto; 
+}
