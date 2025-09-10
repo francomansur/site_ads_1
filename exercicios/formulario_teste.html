@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <link rel="stylesheet" href="mvp.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário HTML</h1>
+    <form method="post" action="grava.php" enctype="text/plain">
+        Nome:<input type="text" name="vl-nome" id="vl-nome" placeholder="Nome Completo" required>
+        Senha:<input type="password" name="vl-senha" id="vl-senha" size="8" maxlength="6" placeholder required="******"><br>
+        Sexo:<label for="masculino"><input type="radio" name="vl-sexo" id="masculino" value="M" checked>Masculino</label>
+             <label for="feminino"><input type="radio" name="vl-sexo" id="feminino" value="F">Feminino</label><br>
+        Selecione seus esportes favoritos:<br>
+        <label for="vl-esporte1"><input type="checkbox" name="vl-esporte1" id="vl-esporte1" value="Futebol">Futebol</label>
+        <label for="vl-esporte2"><input type="checkbox" name="vl-esporte2" id="vl-esporte2" value="Volei">Volei</label>
+        <label for="vl-esporte3"><input type="checkbox" name="vl-esporte3" id="vl-esporte3" value="Basquete">Basquete</label><br>
+        Cidade onde mora:
+        <select name="cidade">
+            <optgroup label="Minas Gerais">
+                <option value="Uberaba">Uberaba</option>
+                <option value="Uberlândia">Uberlândia</option>
+            </optgroup>
+            <optgroup label="São Paulo">
+                <option value="Ribeirão Preto">Ribeirão Preto</option>
+                <option value="Igarapava">Igarapava</option>
+            </optgroup>
+        </select><br>
+        Escolha uma cor:
+        <input type="color"><br>
+        <input type="number"><br>
+        <input type="date"><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
