@@ -33,7 +33,7 @@ a:hover {
 .sections-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 64px;          /* espaço entre seções */
+  gap: 32px;          /* espaço entre seções */
   width: 68%;         /* ocupa 68% da largura da página */
   max-width: 900px;   /* mas nunca passa de 900px */
   margin: 80px auto; /* 40px em cima e embaixo, centralizado */
