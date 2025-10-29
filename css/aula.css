@@ -1,0 +1,52 @@
+body {
+    background-color: #181818;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px 16px 40px;
+    margin: 0;
+    background-color: #202020;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.logo img {
+    width: 130px;
+    height: auto;
+    justify-content: center;
+}
+
+main li, ul, p, h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+main a {
+    color: rgb(0, 140, 255);
+}
+
+h1 {
+    margin: 0 auto;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
